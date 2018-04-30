@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+ <RelativeLayout
+     android:id="@+id/linear2"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:layout_marginTop="@dimen/_12ssp">
+
+  <TextView
+      android:id="@+id/tvname"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20ssp"
+      android:visibility="visible"
+      android:textColor="@color/toolbar_color"
+      android:textSize="@dimen/_15ssp"
+      android:text="Name"/>
+
+
+
+  <EditText
+      android:id="@+id/etname"
+      android:textSize="@dimen/_14ssp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20ssp"
+      android:layout_marginEnd="@dimen/_20ssp"
+      android:hint="  "
+
+      android:background="@drawable/border"
+      android:padding="@dimen/_5ssp"
+      android:gravity="start"
+      android:lines="1"
+      android:layout_marginTop="@dimen/_5sdp"
+      android:layout_below="@+id/tvname"
+      android:inputType="textEmailAddress" />
+
+
+  <TextView
+      android:id="@+id/tvemail"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20ssp"
+      android:visibility="visible"
+      android:layout_below="@+id/etname"
+      android:textColor="@color/toolbar_color"
+      android:textSize="@dimen/_15ssp"
+      android:text="Email"/>
+
+
+
+  <EditText
+      android:id="@+id/etEmail"
+      android:textSize="@dimen/_14ssp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20ssp"
+      android:layout_marginEnd="@dimen/_20ssp"
+      android:hint="  "
+      android:background="@drawable/border"
+      android:padding="@dimen/_5ssp"
+      android:gravity="start"
+      android:lines="1"
+      android:layout_marginTop="@dimen/_5sdp"
+      android:layout_below="@+id/tvemail"
+      android:inputType="textEmailAddress" />
+
+
+  <TextView
+      android:id="@+id/tvpassword"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20ssp"
+      android:visibility="visible"
+      android:layout_below="@+id/etEmail"
+      android:textColor="@color/toolbar_color"
+      android:textSize="@dimen/_15ssp"
+      android:text="Password"/>
+
+
+
+  <EditText
+      android:id="@+id/etpassword"
+      android:textSize="@dimen/_14ssp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20ssp"
+      android:layout_marginEnd="@dimen/_20ssp"
+      android:hint="  "
+      android:background="@drawable/border"
+      android:padding="@dimen/_5ssp"
+      android:gravity="start"
+      android:lines="1"
+      android:layout_marginTop="@dimen/_5sdp"
+      android:layout_below="@+id/tvpassword"
+      android:inputType="textEmailAddress" />
+
+  <TextView
+      android:id="@+id/tvcontact"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20ssp"
+      android:visibility="visible"
+      android:layout_below="@+id/etpassword"
+      android:textColor="@color/toolbar_color"
+      android:textSize="@dimen/_15ssp"
+      android:text="Contact"/>
+
+
+
+  <EditText
+      android:id="@+id/etcontact"
+      android:textSize="@dimen/_14ssp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/_20ssp"
+      android:layout_marginEnd="@dimen/_20ssp"
+      android:hint="  "
+      android:background="@drawable/border"
+      android:padding="@dimen/_5ssp"
+      android:gravity="start"
+      android:lines="1"
+      android:layout_marginTop="@dimen/_5sdp"
+      android:layout_below="@+id/tvcontact"
+      android:inputType="textEmailAddress" />
+
+
+
+
+
+ </RelativeLayout>
+
+ <Button
+     android:id="@+id/btnRedister"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="submit"
+     android:layout_below="@+id/linear2"
+     android:layout_marginStart="@dimen/_40ssp"
+     android:layout_marginEnd="@dimen/_40ssp"
+     android:textAllCaps="false"
+     android:layout_gravity="center_horizontal"
+     android:textSize="@dimen/_13ssp"
+     android:layout_marginTop="@dimen/_10ssp"
+     android:textColor="#fff" />
+ <RelativeLayout
+     android:id="@+id/rl_skip"
+     android:layout_width="match_parent"
+     android:layout_below="@+id/btnRedister"
+     android:gravity="center_vertical"
+     android:layout_marginTop="@dimen/_25sdp"
+     android:layout_height="wrap_content">
+  <ImageView
+      android:id="@+id/skip"
+      android:layout_width="wrap_content"
+      android:src="@drawable/right_arrow"
+      android:layout_centerHorizontal="true"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_below="@+id/skip"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/_3ssp"
+      android:text="Skip "
+      android:textStyle="bold"
+      android:layout_marginLeft="@dimen/_3ssp"
+      android:textColor="#000"
+      android:layout_height="wrap_content" />
+ </RelativeLayout>
+
+
+
+ <ProgressBar
+     android:id="@+id/progressBar"
+     android:layout_width="wrap_content"
+     android:layout_centerInParent="true"
+     android:visibility="gone"
+     android:progressBackgroundTint="@color/app_color"
+     android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>
+
+
+
